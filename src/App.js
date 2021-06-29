@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+// import Accord from './Accord';
+// import Courses from './Courses';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import RoundNav from './RoundNav';
+import Contact from './Contact';
+import About from './About';
+import Home from './Home';
+import SideNav from './Sidenav';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <div className="main">
+    
+    {/* <Accord/> */}
+    {/* <Courses /> */}
+    <div className="logo">LOGO</div>
+    <RoundNav />
+    <div className="container">
+      <SideNav className="nav-container"/>
+      <Home className="pg1"/>
+      <About className="pg2"/>
+      <Contact className="pg3"/>
+    </div>
     </div>
   );
 }
